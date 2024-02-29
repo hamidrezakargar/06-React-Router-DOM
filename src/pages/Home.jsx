@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <h1>Home Page</h1>
-      <Link to="/posts">See latest posts?</Link>
+      <Link to="/app/posts">See latest posts?</Link>
     </div>
   );
 }
