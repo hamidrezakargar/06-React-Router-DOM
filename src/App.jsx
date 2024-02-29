@@ -13,11 +13,11 @@ function App() {
   return (
     <div>
       <Routes>
+        <Route index element={<Home />} />
         <Route path="/app" element={<Layout />}>
-          <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route path="posts/:id" element={<Post />} />
           <Route path="posts" element={<Posts />} />
+          <Route path="posts/:id" element={<Post />} />
           <Route path="dashboard" element={<Dashboard />}>
             <Route index element={<Navigate to="profile" />} />
             <Route path="profile" element={<Profile />} />
